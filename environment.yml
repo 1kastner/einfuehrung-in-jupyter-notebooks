@@ -1,0 +1,12 @@
+name: intro-jupyter-notebooks
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.8
+  - jupyterlab
+  - nb_conda_kernels
+  - scikit-image
+  - scikit-learn
+  - pandas
+  - folium
