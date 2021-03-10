@@ -18,7 +18,9 @@ Sie können die Jupyter Notebooks auch online über Binder ausführen.
 Klicken Sie dafür
 [auf diesen Binder-Starter](https://mybinder.org/v2/gh/1kastner/einfuehrung-in-jupyter-notebooks/main),
 um dieses GitHub-Repository online zu laden.
-Diese Webseite ist manchmal etwas langsam, weswegen eine lokale Installation zu bevorzugen ist.
+Mehr Infos rund um Binder finden Sie
+[in deren Dokumentation](https://mybinder.readthedocs.io/en/latest/introduction.html).
+Binder ist manchmal etwas langsam, weswegen eine lokale Installation zu bevorzugen ist.
 
 
 ## Lizenz
