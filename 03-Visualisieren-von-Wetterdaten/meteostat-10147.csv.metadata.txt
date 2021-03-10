@@ -1,0 +1,7 @@
+﻿# Licence
+Source: https://dev.meteostat.net/docs/terms.html#license
+Content: Meteostat data is provided under the terms of the Creative Commons Attribution-NonCommercial 4.0 International Public License.
+
+# Datenquelle:
+Source: https://meteostat.net/de/station/10147
+
