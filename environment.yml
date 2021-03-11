@@ -9,6 +9,7 @@ dependencies:
   - jupyterlab-lsp
   - autopep8
   - pyflakes
+  - rope
   - pandas
   - matplotlib
   - folium
