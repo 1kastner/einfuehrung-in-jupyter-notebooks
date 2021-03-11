@@ -9,6 +9,7 @@ dependencies:
   - nb_conda_kernels
   - jupyterlab-lsp
   - pandas
+  - matplotlib
   - folium
   - rise
   - ipycytoscape
