@@ -1,5 +1,4 @@
 name: intro-jupyter-notebooks
-channel_priority: strict
 channels:
   - conda-forge
   - defaults
@@ -13,6 +12,8 @@ dependencies:
   - folium
   - rise
   - ipycytoscape
+  - ipywidgets
+  - ipycanvas
   - networkx
   - pip
   - pip:
