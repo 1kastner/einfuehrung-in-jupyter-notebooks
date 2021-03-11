@@ -12,7 +12,6 @@ dependencies:
   - pandas
   - matplotlib
   - folium
-  - rise
   - ipycytoscape
   - ipywidgets
   - ipycanvas
