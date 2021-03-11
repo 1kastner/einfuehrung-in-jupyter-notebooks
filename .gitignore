@@ -131,3 +131,4 @@ dmypy.json
 *.out
 *.synctex.gz
 _intern/*.pdf
+.virtual_documents/
