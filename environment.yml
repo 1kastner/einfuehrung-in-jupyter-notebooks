@@ -1,11 +1,16 @@
 name: intro-jupyter-notebooks
+channel_priority: strict
 channels:
-  - defaults
   - conda-forge
+  - defaults
 dependencies:
   - python=3.8
   - jupyterlab
   - nb_conda_kernels
+  - jupyterlab-lsp
   - pandas
   - folium
   - rise
+  - pip
+  - pip:
+    - git+https://github.com/krassowski/python-language-server.git@main
