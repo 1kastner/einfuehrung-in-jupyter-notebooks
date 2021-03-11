@@ -11,6 +11,8 @@ dependencies:
   - pandas
   - folium
   - rise
+  - ipycytoscape
+  - networkx
   - pip
   - pip:
     - git+https://github.com/krassowski/python-language-server.git@main
