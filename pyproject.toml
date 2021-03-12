@@ -15,6 +15,7 @@ ipycytoscape = "^1.2.0"
 ipywidgets = "^7.6.3"
 ipycanvas = "^0.8.2"
 networkx = "^2.5"
+scipy = "^1.6.1"
 
 [tool.poetry.dev-dependencies]
 autopep8 = "^1.5.5"
