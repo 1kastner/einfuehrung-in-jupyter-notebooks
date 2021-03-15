@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "einfuehrung-in-jupyter-notebooks"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+jupyterlab = "^3.0.10"
+jupyterlab-lsp = "^3.4.1"
+pandas = "^1.2.3"
+matplotlib = "^3.3.4"
+folium = "^0.12.1"
+ipycytoscape = "^1.2.0"
+ipywidgets = "^7.6.3"
+ipycanvas = "^0.8.2"
+networkx = "^2.5"
+scipy = "^1.6.1"
+
+[tool.poetry.dev-dependencies]
+autopep8 = "^1.5.5"
+black = "^20.8b1"
+pyflakes = "^2.2.0"
+rope = "^0.18.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
