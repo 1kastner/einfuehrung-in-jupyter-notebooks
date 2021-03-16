@@ -17,6 +17,8 @@ dependencies:
   - ipywidgets
   - ipycanvas
   - networkx
+  - scipy
+  - git
   - pip
   - pip:
     - git+https://github.com/krassowski/python-language-server.git@main
