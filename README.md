@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/345966057.svg)](https://zenodo.org/badge/latestdoi/345966057)
+
 # Einfuehrung in Jupyter Notebooks
 
 Ein Workkshop, in dem Jupyter Notebooks als Werkzeug für akademisches Arbeiten vorgestellt werden.
