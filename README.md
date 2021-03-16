@@ -11,6 +11,15 @@ Eine Anleitung ist
 [in dieser PDF](./Vorbereitung-auf-den-Workshop.pdf)
 zu finden.
 
+Falls Sie bereits viel Erfahrung mit Python gesammelt haben und Ihre bereits vorliegende Python-Umgebung weiterverwenden möchten,
+gibt es auch
+[eine pyproject.toml](https://gist.github.com/1kastner/032ea28683e6cbbf9f05391efa0187fa),
+wie sie von
+[poetry](https://python-poetry.org/)
+gelesen und verarbeitet werden kann.
+Eine kleine Diskussion über ein Für und Wider lässt sich
+[hier](https://github.com/1kastner/einfuehrung-in-jupyter-notebooks/pull/4)
+finden.
 
 ## Ausführen auf leistungsschwachen Geräten
 
