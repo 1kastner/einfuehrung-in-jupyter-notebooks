@@ -1,15 +1,17 @@
 name: intro-jupyter-notebooks
 channels:
   - conda-forge
-  - defaults
 dependencies:
-  - python=3.8
-  - jupyterlab
-  - nb_conda_kernels
+
+  # Entwicklungsumgebung
+  - python=3.10
+  - jupyterlab=3
+  - jupyterlab-spellchecker
   - jupyterlab-lsp
-  - autopep8
-  - pyflakes
-  - rope
+  - python-lsp-server
+  - pylint
+
+  # benoetigte Bibliotheken
   - pandas
   - matplotlib
   - folium
@@ -18,7 +20,3 @@ dependencies:
   - ipycanvas
   - networkx
   - scipy
-  - git
-  - pip
-  - pip:
-    - git+https://github.com/krassowski/python-language-server.git@main
