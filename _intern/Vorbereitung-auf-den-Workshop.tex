@@ -11,7 +11,7 @@
 
 \author{Marvin Kastner \href{mailto:marvin.kastner@tuhh.de}{<marvin.kastner@tuhh.de>}}
 
-\date{16. März 2021} % without \date command, current date is supplied
+\date{28. Juni 2022} % without \date command, current date is supplied
 
 %\geometry{showframe} % display margins for debugging page layout
 
@@ -35,7 +35,7 @@
 
 \begin{abstract}
 \noindent
-In diesem Dokument werden die Schritte aufgezählt, die von den Workshop-Teilnehmern selbständig \emph{vor} Beginn des Workshops auf dem eigenen Endgerät (PC, Laptop, Apple, ...) durchgeführt werden müssen.
+In diesem Dokument werden die Schritte aufgezählt, die von den Workshop-Teilnehmenden selbständig \emph{vor} Beginn des Workshops auf dem eigenen Endgerät (PC, Laptop, Apple, ...) durchgeführt werden müssen.
 Dies ist notwendig, weil zur Einrichtung der Arbeitsumgebung große Mengen an Daten heruntergeladen und verarbeitet werden müssen.
 \end{abstract}
 
@@ -59,9 +59,10 @@ Der Download-Bereich der Webseite sollte ungefähr wie in Abbildung\,\ref{fig:an
 \end{marginfigure}
 
 Falls Sie auf Ihrem Endgerät zwei Accounts, einen Administrator- bzw.\ root-Account und einen Account fürs alltägliche Arbeiten, verwenden, seien Sie bitte vorsichtig.
-Die Installation von Anaconda erfordert keine erhöhten Rechte.
-Eine Installation mit einem Nutzer mit erhöhten Rechten (z.\,B. \emph{root} oder \emph{admin}) kann u.\,U. dazu führen, dass Anaconda nur für diesen einen Nutzer mit erhöhten Rechten installiert ist bzw.\ dass es zu Problemen mit der Rechteverwaltung kommt.
+Die Installation von Anaconda sollte mit dem Account fürs alltägliche Arbeiten durchgeführt werden.
+Eine Installation mit einem Nutzer mit erhöhten Rechten (z.\,B. \emph{root} oder einem dedizierten Admin-Account) kann u.\,U.\ dazu führen, dass Anaconda nur für diesen einen Nutzer mit erhöhten Rechten installiert ist bzw.\ dass es zu Problemen mit der Rechteverwaltung kommt.
 In der Vergangenheit hat ein erneutes Installieren von Anaconda dieses Problem dann \emph{nicht} beheben können.
+Lösungen hierfür lassen sich unter \url{https://docs.anaconda.com/anaconda/install/multi-user/} finden.
 
 Rufen Sie nach dem Download den Installer auf und folgen Sie den Installationsschritten.
 Konsultieren Sie im Fehlerfall offizielle Quellen des Herstellers (wie z.\,B. \url{https://docs.anaconda.com/anaconda/install/}) oder Foren (wie z.\,B. \url{https://stackoverflow.com}).
@@ -73,13 +74,14 @@ Konsultieren Sie im Fehlerfall offizielle Quellen des Herstellers (wie z.\,B. \u
 Klonen Sie das git-Repository
 \url{https://github.com/1kastner/einfuehrung-in-jupyter-notebooks.git},
 damit Sie die Workshop-Materialien lokal haben -- dies umfasst nur den Programmierteil.
-Am einfachsten ist es, wenn Sie die Dateien lokal unterhalb des Ordners \texttt{Eigene Dateien} ablegen.
-Denn in diesem Ordner öffnet sich standardmäßig JupyterLab.
+Am einfachsten ist es, wenn Sie die Dateien lokal unterhalb des benutzer\-eigenen Ordners \texttt{Dokumente} ablegen
+(unter Windows typischerweise \texttt{C:\textbackslash{}Users\textbackslash{}BENUTZERNAME\textbackslash{}Documents}.
+Denn dieser Ordner ist, wenn JupyterLab startet, direkt verfügbar.
 Falls Sie noch nie mit git gearbeitet haben, lesen Sie bitte die nächsten Absätze.
 
 \newthought{Warum sollte ich git lernen?}
-Für die Versionsverwaltung ist git quasi der Standard und wird immer häufiger auch außerhalb der Software-Entwicklung, aus der sie ursprünglich stammt, eingesetzt.
-Deswegen lohnt es sich für (fast) jeden, sich Fähigkeiten mit diesem Tool anzueignen.
+Für die Versionsverwaltung ist git quasi der Standard und wird immer häufiger auch außerhalb der Software-Entwicklung, aus der es ursprünglich stammt, eingesetzt.
+Deswegen lohnt es sich für (fast) alle, sich Fähigkeiten mit diesem Tool anzueignen.
 An der TUHH gibt es unter
 \url{https://collaborating.tuhh.de/}
 eine eigene GitLab-Instanz und die Graduiertenakademie bietet regelmäßig Workshops an, um sich mit der Bedienung vertraut zu machen.
@@ -159,7 +161,8 @@ Im zweiten Schritt muss die Umgebung \texttt{intro-jupyter-notebooks} ausgewähl
 (mit einer (2) markiert).
 Danach startet ein Klicken auf \texttt{Launch} JupyterLab im Browser
 (mit einer (3) markiert).
-Standardmäßig öffnet sich nun der Browser und dort wird der Inhalt vom Ordner \texttt{Eigene Dateien} angezeigt.
+Standardmäßig öffnet sich nun ein neuer Tab im Browser und JupyterLab zeigt zunächst den Inhalt vom Benutzer-Ordner an (unter Windows typischerweise \texttt{C:\textbackslash{}Users\textbackslash{}BENUTZERNAME}).
+Dies sollte wie in Abbildung~\ref{fig:jupyterlab-running} aussehen.
 
 \begin{figure}[h]
   \includegraphics{anaconda-navigator-jupyterlab--mit-reihenfolge}
@@ -169,7 +172,7 @@ Standardmäßig öffnet sich nun der Browser und dort wird der Inhalt vom Ordner
 
 \section{Erste Schritte mit JupyterLab}
 
-Wenn Sie die Workshop-Materialien wie unter Abschnitt \enquote{\nameref{sec:git-clone}} angegeben unterhalb des Ordners \texttt{Eigene Dateien} abgelegt haben, 
+Wenn Sie die Workshop-Materialien wie unter Abschnitt \enquote{\nameref{sec:git-clone}} angegeben  abgelegt haben, 
 können Sie in JupyterLab zum Ordner 
 \texttt{00-Installationscheck}
 navigieren und dort das Jupyter Notebook (die Datei mit der Endung \texttt{.ipynb}) mit einem Doppelklick öffnen
@@ -182,9 +185,12 @@ anschauen.
 
 \begin{figure}[h]
   \includegraphics{jupyterlab-running}
-  \caption{In JupyterLab können links alle Dateien und Ordner aus dem Ordner \emph{Eigene Dateien} betrachtet werden.}%
-\label{fig:start-jupyterlab}
+  \caption{In JupyterLab können links alle Dateien und Ordner aus dem Benutzerordner betrachtet werden.
+  Nun können die Dateien mit der Endung \texttt{.ipynb} mit einem Doppelklick geöffnet werden.
+  }%
+\label{fig:jupyterlab-running}
 \end{figure}
+
 
 
 \end{document}
