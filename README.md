@@ -1,4 +1,6 @@
 [![DOI](https://zenodo.org/badge/345966057.svg)](https://zenodo.org/badge/latestdoi/345966057)
+[![Linux conda env setup](https://github.com/1kastner/einfuehrung-in-jupyter-notebooks/actions/workflows/conda_env_create_ubuntu.yml/badge.svg)](https://github.com/1kastner/einfuehrung-in-jupyter-notebooks/actions/workflows/conda_env_create_ubuntu.yml)
+[![Windows conda env setup](https://github.com/1kastner/einfuehrung-in-jupyter-notebooks/actions/workflows/conda_env_create_windows.yml/badge.svg)](https://github.com/1kastner/einfuehrung-in-jupyter-notebooks/actions/workflows/conda_env_create_windows.yml)
 
 # Einfuehrung in Jupyter Notebooks
 
