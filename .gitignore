@@ -132,3 +132,4 @@ dmypy.json
 *.synctex.gz
 _intern/*.pdf
 .virtual_documents/
+.user-settings/@krassowski/jupyterlab-lsp/diagnostics.jupyterlab-settings
