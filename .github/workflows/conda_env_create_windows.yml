@@ -1,0 +1,29 @@
+name: Windows conda installation (conda in PATH)
+
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+    branches:
+    - master
+
+jobs:
+  build:
+    name: Windows conda installation
+    runs-on: windows-2019
+
+    steps:
+
+    - uses: actions/checkout@v2
+
+    - uses: conda-incubator/setup-miniconda@v2
+      with:
+        auto-update-conda: true
+        auto-activate-base: true
+        activate-environment: ""
+
+    - name: Create and update environment (miniconda is in PATH)
+      run: |
+        conda info
+        conda env create --file environment.yml
