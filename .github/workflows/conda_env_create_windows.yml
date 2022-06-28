@@ -3,10 +3,10 @@ name: Windows conda env setup
 on:
   push:
     branches:
-    - master
+    - main
   pull_request:
     branches:
-    - master
+    - main
 
 jobs:
   build:
