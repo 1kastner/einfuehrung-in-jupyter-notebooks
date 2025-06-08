@@ -28,7 +28,7 @@ VERIFY > nul
 ECHO Show installed versions in the environment !CONDA_ENV!:
 CALL jupyter --version
 
-CALL python -m jupyter-lab
+CALL python -m jupyterlab
 IF ERRORLEVEL 1 (
     ECHO JupyterLab encountered an error, please check the error messages above
     PAUSE
