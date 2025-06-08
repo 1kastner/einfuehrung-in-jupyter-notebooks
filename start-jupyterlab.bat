@@ -10,6 +10,9 @@ SET CONDA_ENV=intro-jupyter-notebooks
 
 CALL :activate_conda_base
 
+ECHO Show installed versions in the base environment:
+CALL jupyter --version
+
 CALL conda activate !CONDA_ENV! || (
     ECHO The environment '!CONDA_ENV!' could not be activated
     PAUSE
@@ -22,11 +25,15 @@ ECHO Loading settings for JupyterLab from '%JUPYTERLAB_SETTINGS_DIR%'
 REM Reset errorlevel to 0
 VERIFY > nul
 
-CALL python -m jupyterlab
+ECHO Show installed versions in the environment !CONDA_ENV!:
+CALL jupyter --version
+
+CALL python -m jupyter-lab
 IF ERRORLEVEL 1 (
     ECHO JupyterLab encountered an error, please check the error messages above
     PAUSE
 )
+
 
 GOTO :EOF
 
