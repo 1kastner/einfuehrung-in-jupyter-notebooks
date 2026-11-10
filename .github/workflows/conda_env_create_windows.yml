@@ -10,17 +10,18 @@ on:
 
 jobs:
   build:
-    runs-on: windows-2019
+    runs-on: windows-latest
 
     steps:
 
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v7
 
-    - uses: conda-incubator/setup-miniconda@v2
+    - uses: conda-incubator/setup-miniconda@v4
       with:
         auto-update-conda: true
         auto-activate-base: true
         activate-environment: ""
+        python-version: "3.15"
 
     - name: Create and update environment (miniconda is in PATH)
       run: |
