@@ -19,9 +19,7 @@ jobs:
     - uses: conda-incubator/setup-miniconda@v4
       with:
         auto-update-conda: true
-        auto-activate-base: true
-        activate-environment: ""
-        python-version: "3.15"
+        auto-activate: true
 
     - name: Create and update environment (miniconda is in PATH)
       run: |
