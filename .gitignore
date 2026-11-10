@@ -135,3 +135,7 @@ _intern/*.pdf
 .user-settings/@krassowski/jupyterlab-lsp/diagnostics.jupyterlab-settings
 .conda_path
 *.bak
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
