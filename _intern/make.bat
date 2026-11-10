@@ -12,7 +12,7 @@ pdflatex vorbereitung-auf-den-workshop.tex || goto :error
 ECHO Erfolgreich PDF erstellt!
 
 :: Lösche gerade erzeugte aber nicht benötigte Artefakte
-DEL *.aux *.log *.out *.blg *.bbl *.synctex(busy) *.synctex.gz
+DEL *.aux *.log *.out *.blg *.bbl *.synctex(busy) *.synctex.gz *.fdb_latexmk *.fls
 
 :: Kopiere Datei ins Überverzeichnis
 XCOPY vorbereitung-auf-den-workshop.pdf .. || goto :error
