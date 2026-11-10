@@ -134,24 +134,33 @@ Das Erstellen der Umgebung nimmt für gewöhnlich einige Zeit in Anspruch.
 \end{figure}
 
 \newthought{Warum ist dieser Schritt notwendig?}
-Die Jupyter Notebooks, die Sie soeben heruntergeladen haben, benötigen  spezielle Bibliotheken.
+Die Jupyter Notebooks, die Sie soeben heruntergeladen haben, benötigen spezielle Bibliotheken.
 Einige werden bereits bei der Installation von Anaconda mit ausgeliefert, andere müssen aber noch nachinstalliert werden.
-Auf der obersten Ebene des git-Repositorys befindet sich die Datei \texttt{environment.yml}, in der alle benötigten Bibliotheken aufgelistet werden.
+Auf der obersten Ebene des git-Repositorys befindet sich die Datei 
+\texttt{environment.yml},
+in der alle Abhängigkeiten aufgelistet sind.
 Diese Datei sollten Sie nun bereits auf Ihrem Endgerät in einem lokalen Ordner vorliegen haben.
-Die Struktur der Datei \texttt{environment.yml} ist von Anaconda vorgegeben und erlaubt es, die Abhängigkeiten von Bibliotheken automatisch aufzulösen.
+Die Struktur der Datei
+\texttt{environment.yml}
+ist von Anaconda vorgegeben und erlaubt es, die Abhängigkeiten von Bibliotheken automatisch aufzulösen.
 Damit man an einem PC in verschiedenen Projekten unterschiedliche Versionen einer gleichen Bibliothek haben kann,
 strukturiert Anaconda die zu einem Projekt gehörenden Bibliotheken standardmäßig in Umgebungen (eng. Environments).
-Für das Seminar erstellen wir die Umgebung \texttt{intro-jupyter-notebooks} basierend auf der gegebenen \texttt{environment.yml}.
+Für das Seminar erstellen wir die Umgebung
+\texttt{intro-jupyter-notebooks}
+basierend auf der gegebenen
+\texttt{environment.yml}.
 
 \newthought{Aber ist es denn notwendig, hier mit einer GUI zu arbeiten?}
-Natürlich gibt es auch ein Kommandozeilentool, das bereits mit Anaconda ausgeliefert worden ist.
+Natürlich gibt es auch ein Kommandozeilentool, das bereits mit Mini- und Anaconda ausgeliefert worden ist.
 Es heißt \texttt{conda}.
 Unter Windows wird dies je nach Auswahl während der Installation nicht in die Pfad-Variable mit aufgenommen.
-Dann steht Ihnen immer noch die Anwendung \emph{Anaconda Prompt} zur Verfügung, die aus dem Startmenü heraus aufgerufen werden kann.
+Deswegen steht es nicht in den Kommandozeilenanwendungen \emph{Eingabeaufforderung} oder \emph{Windows PowerShell} zur Verfügung.
+Dafür müssen Sie explizit die Anwendung \emph{Anaconda Prompt}, die auf der \emph{Eingabeaufforderung} basiert, oder \emph{Anaconda PowerShell Prompt}, die auf der \emph{Windows PowerShell} basiert, verwenden.
+Beide lassen sich aus dem Startmenü heraus starten.
 Auf
 \url{https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file}
 wird erläutert, wie eine existierende \texttt{environment.yml} eingelesen werden kann.
-Folgen Sie der Anleitung und erstellen Sie die passende Umgebung.
+Folgen Sie der Anleitung und erstellen Sie die passende conda-Umgebung.
 
 \section{Start von JupyterLab}
 
@@ -186,6 +195,7 @@ Falls Sie noch keine Erfahrungen mit Python haben und Sie Interesse haben, sich 
 können Sie sich die Einführungsmaterialien unter
 \texttt{01-Einfuehrung-in-Python}
 anschauen.
+Eine Einführung in die Programmiersprache Python ist nicht Inhalt des Workshops.
 
 \begin{figure}[h]
   \includegraphics{jupyterlab-running}
